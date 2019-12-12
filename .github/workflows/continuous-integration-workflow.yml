@@ -13,7 +13,7 @@ jobs:
       - name: Hello world
         uses: nohomers/no-homers-hello-world-docker-action@11767_output_case_test
         with:
-          who-to-greet: 'Lisa Simpson2'
+          who-to-greet: 'Lisa Simpson3'
         id: hello
       - name: Number of homers allowed
         run: echo "The number of homers allowed is {{ steps.hello.outputs.homers-allowed }}."
