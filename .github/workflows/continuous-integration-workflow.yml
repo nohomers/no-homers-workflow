@@ -15,6 +15,8 @@ jobs:
         with:
           who-to-greet: 'Lisa Simpson'
         id: hello
+      - name: Number of homers allowed
+        run: echo "The number of homers allowed is {{ steps.hello.outputs.homers-allowed }}."
       # This step prints an output (time) from the previous step's action.
       - name: Echo the greeting's time
-        run: echo 'The time was ${{ steps.hello.outputs.nothing }}.'
+        run: echo 'The time was ${{ steps.hello.outputs.time }}.'
